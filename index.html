@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS-Buổi 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Nav pills -->
+        <div class="col-md-2">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#bai1"
+                >Bài 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai4">Bài 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai5">Bài 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai6">Bài 6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#bai7">Bài 7</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="col-md-10 py-3">
+          <div class="tab-content">
+            <div class="tab-pane container active" id="bai1">
+              <h1>1. Tìm số chẵn/lẻ nhỏ hơn 100</h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến soChan để lưu trữ số chẳng<br />
+                  - Tạo biến soLe để lưu trữ số lẻ<br />
+                  - Tạo biến bước nhảy i = 0 và tăng dần đến 99<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp; + Nếu i chia hết cho 2 thì lưu vào
+                  biến soChan<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ Nếu i không chia hết cho 2 thì lưu
+                  bào bien soLe<br />
+                  <br />
+                  Đầu ra:<br />
+                  - In ra Số chẵn và Số lẻ<br />
+                </p>
+              </div>
+
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai1">Kết quả</button>
+                <div class="alert alert-success mt-2" id="KQ1"></div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="bai2">
+              <h1>2. Đếm số chia hết cho 3</h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến count = 0 đê đếm số chia hết cho 3<br />
+                  - Tạo biến bước nhảy i = 0 và tăng dần đến 1000<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ Nếu i chia hết cho 3 thì count sẽ +
+                  1<br />
+                  <br />
+                  Đầu ra:<br />
+                  - Tổng số nguyên chia hết cho 3 bé hơn 1000<br />
+                </p>
+              </div>
+
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai2">Kết quả</button>
+                <div class="alert alert-success mt-2" id="KQ2"></div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="bai3">
+              <h1>
+                3. Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000
+              </h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến tổng count = 0<br />
+                  - Tạo biến bước nhảy i = 0<br />
+                  - Tạo vòng lặp cho đến khi count > 10000 (điều kiện trong
+                  while sẽ là count <= 10000)<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ biến i sẽ + 1 và tăng dần đều theo
+                  từng vòng lặp<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ biến count sẽ + i<br />
+                  - Kết quả sẽ là giá trị của biến i ở vòng lặp cuối cùng<br />
+                  <br />
+                  Đầu ra:<br />
+                  - In ra số nguyen dương nhỏ nhất sao cho 1 + 2 + ... + n >
+                  10000<br />
+                </p>
+              </div>
+
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai3">Kết quả</button>
+                <div class="alert alert-success mt-2" id="KQ3"></div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="bai4">
+              <h1>4. Tính tổng S(n) = x + x^2 + x^3 + … + x^n</h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  - Số x và n<br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến x và n để nhận giá trị đầu vào<br />
+                  - Tạo biến count = 0<br />
+                  - Tạo biến bước nhảy i = 1 và tăng dần đến n<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ biến count sẽ bằng count vòng lặp cũ
+                  cộng thêm x^i (x ** i)<br />
+                  <br />
+                  Đầu ra:<br />
+                  - Tổng của biểu thức: x + x^2 + x^3 + ... x^n<br />
+                </p>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                  <input
+                    id="x"
+                    type="number"
+                    class="form-control"
+                    placeholder="Nhập x"
+                  />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <input
+                    id="n"
+                    type="number"
+                    class="form-control"
+                    placeholder="Nhập n"
+                  />
+                </div>
+              </div>
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai4">Tính tổng</button>
+                <div class="alert alert-success mt-2" id="KQ4"></div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="bai5">
+              <h1>5. Tính giai thừa</h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  - Số n <br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến n để nhận giá trị đầu vào <br />
+                  - Tạo biến giaiThua = 1 <br />
+                  - Tạo biến i = 2 và tăng dần đến n <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ biến giaiThua sẽ bằng giaiThua ở
+                  vòng lặp đầu nhân với i <br />
+                  <br />
+                  Đầu ra: <br />
+                  - Giai thừa của n <br />
+                </p>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                  <input
+                    id="n_bai5"
+                    type="number"
+                    class="form-control"
+                    placeholder="Nhập n"
+                  />
+                </div>
+              </div>
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai5">Kết quả</button>
+                <div class="alert alert-success mt-2" id="KQ5"></div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="bai6">
+              <h1>6. Tạo thẻ div</h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến bước nhảy i=1 và tăng dần đến 10<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp; + Nếu i chia hết cho 2 (chẵn) thì sẽ
+                  tạo ra thẻ div với background màu đỏ<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ Nếu i không chia hết cho 2 (lẻ) thì
+                  sẽ tạo ra div với background màu xanh<br />
+                  <br />
+                  Đầu ra:<br />
+                  - 10 thẻ div, nếu div ở vị trí chẵn sẽ có background màu đỏ,
+                  vị trí lẻ sẽ có background màu xanh<br />
+                </p>
+              </div>
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai6">Tạo thẻ</button>
+                <div class="alert alert-success mt-2" id="KQ6"></div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="bai7">
+              <h1>7. In số nguyên tố</h1>
+              <div class="note">
+                <p>
+                  Đầu vào: <br />
+                  - Số n <br />
+                  <br />
+                  Xử lý:<br />
+                  - Tạo biến n để nhận giá trị đầu vào<br />
+                  - Tạo biến bước nhảy i = 2 và tăng dần đến n:<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ Tạo biến j = 2 và tăng dần đến căn
+                  bậc 2 của i<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;+ Nếu hết vòng lặp của j mà i không
+                  chia hết cho j thì i đó là số nguyên tố<br />
+                  <br />
+                  Đâu ra:<br />
+                  - Các số nguyên tố nhỏ hơn hoặc bằng n<br />
+                </p>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                  <input
+                    id="n_bai7"
+                    type="number"
+                    class="form-control"
+                    placeholder="Nhập n"
+                  />
+                </div>
+              </div>
+              <div class="result-form">
+                <button class="btn btn-success" id="kq_Bai7">Kết quả</button>
+                <div class="alert alert-success mt-2" id="KQ7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
